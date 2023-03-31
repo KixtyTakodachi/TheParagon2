@@ -10,7 +10,7 @@
   &_wrapper{
     display: flex;
     margin: 77px 140px 0px 140px;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
   &_item{
     background: linear-gradient(to right, $main_color 1px, transparent 1px) 0 0,

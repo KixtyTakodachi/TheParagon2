@@ -16,8 +16,8 @@
     line-height: 50px;
   }
   &_img{
-    //display: block;
-    //margin: 32px auto 0 auto;
+    display: block;
+    margin: 0 auto;
     //position: relative;
   }
   &_company{
@@ -68,6 +68,28 @@
       left: 50%;
       transform: translateX(-50%);
     }
+  }
+  &_wrapper{
+    margin: 100px 200px 0 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &_block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 250px;
+    justify-content: space-between;
+  }
+  &_divider{
+    width: 300px;
+    height: 1px;
+    border-top: 1px dashed $main_color;
+  }
+  &_company_v2{
+    height: 100px;
+    padding-top: 25px;
   }
 }
 

@@ -1,6 +1,7 @@
 .network{
   margin-top: 140px;
   height: 1083px;
+  position: relative;
   &_title{
     color: $main_color;
     text-align: center;
@@ -8,5 +9,61 @@
     font-weight: 400;
     line-height: 93px;
     font-family: Volkhov;
+  }
+  &_popup{
+    position: absolute;
+    right: 160px;
+    top: 183px;
+    width: 240px;
+    background: linear-gradient(to right, $main_color 1px, transparent 1px) 0 0,
+    linear-gradient(to right, $main_color 1px, transparent 1px) 0 100%,
+    linear-gradient(to left, $main_color 1px, transparent 1px) 100% 0,
+    linear-gradient(to left, $main_color 1px, transparent 1px) 100% 100%,
+    linear-gradient(to bottom, $main_color 1px, transparent 1px) 0 0,
+    linear-gradient(to bottom, $main_color 1px, transparent 1px) 100% 0,
+    linear-gradient(to top, $main_color 1px, transparent 1px) 0 100%,
+    linear-gradient(to top, $main_color 1px, transparent 1px) 100% 100%;
+
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    padding: 25px;
+    &_title{
+      font-size: 24px;
+      color: $main_color;
+      font-family: Volkhov;
+      font-weight: 400;
+      line-height: 31px;
+    }
+    &_desc{
+      font-size: 18px;
+      color: black;
+      font-family: Montserrat;
+      line-height: 30px;
+      font-weight: 400;
+    }
+    &_phone{
+      font-size: 18px;
+      color: black;
+      font-family: Montserrat;
+      line-height: 30px;
+      margin-top: 60px;
+      font-weight: 400;
+    }
+  }
+}
+
+#myearth{
+  height: 923px;
+  &:before{
+    padding: unset;
+  }
+  &:after{
+    content: "";
+    position: absolute;
+    height: 22%;
+    bottom: 4%;
+    left: 13%;
+    right: 13%;
+    background: radial-gradient(ellipse at center, rgba(5,57,89,0.7) 0%,rgba(5,57,89,0.55) 20%,rgba(5,57,89,0.2) 40%,rgba(5,57,89,0.1) 50%,rgba(5,57,89,0.02) 60%,rgba(5,57,89,0) 70%,rgba(5,57,89,0) 100%);
   }
 }

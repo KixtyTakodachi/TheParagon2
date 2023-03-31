@@ -1,7 +1,461 @@
-@media (max-width: 1200px) {}
+@media (max-width: 1200px) {
+  .header_menu{
+    width: 700px;
+  }
+  .promo_slider_wrapper{
+    margin: 0px 80px;
+  }
+  .promo_desc_marked{
+    font-size: 52px;
+  }
+  .vision_formula{
+    flex-direction: column;
+  }
+  .factors_wrapper{
+    flex-direction: column;
+    align-items: center;
+  }
+  .factors_item{
+    margin-bottom: 40px;
+    &:nth-last-child(1){
+      margin-bottom: unset;
+    }
+    &:before{
+      display: none;
+    }
+  }
+  .team_wrapper{
+    margin: 77px 40px 0 40px;
+  }
+  .projects_companies{
+    margin: 160px 0px 0 0px;
+    &:before{
+      width: 68%;
+    }
+  }
+  .projects_wrapper{
+    margin: 100px 0 0 0;
+  }
+  .network_popup{
+    right: -47px;
+    top: 87px;
+  }
+  .network_popup_phone{
+    margin-top: 30px;
+  }
+}
 
-@media (max-width: 992px) {}
+@media (max-width: 992px) {
+  .header_menu{
+    width: 600px;
+  }
+  .promo_desc{
+    font-size: 28px;
+  }
+  .promo_desc_marked{
+    font-size: 36px;
+  }
+  .promo_subdesc{
+    padding: 0 47px;
+  }
+  .vision_desc{
+    margin: 60px 190px 0 190px;
+  }
+  .team_item{
+    max-width: 350px;
+  }
+  .team_wrapper{
+    margin: 77px 0 0 0;
+  }
+  .projects_company{
+    min-width: 289px;
+  }
+  .projects_companies{
+    &:before{
+      width: 66%;
+    }
+  }
+  .projects_img{
+    width: 200px;
+  }
+  .projects_divider{
+    width: 200px;
+  }
+  .network_popup{
+    padding: 10px;
+    width: 180px;
+  }
+  .network_popup_desc{
+    font-size: 14px;
+  }
+  .network_popup_phone{
+    font-size: 14px;
+  }
+  .promo_title, .vision_title, .factors_title, .team_title, .projects_title, .network_title, .footer_title{
+    font-size: 62px;
+  }
+}
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+  .header_menu{
+    display: none;
+  }
+  .menu_burger{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .promo_title, .vision_title, .factors_title, .team_title, .projects_title, .network_title, .footer_title{
+    font-size: 42px;
+  }
+  .vision_desc{
+    margin: 60px 110px 0 110px;
+  }
+  .vision_formula_item{
+    font-size: 32px;
+  }
+  .unique_line{
+    font-size: 32px;
+  }
+  .team_wrapper{
+    flex-direction: column;
+    align-items: center;
+  }
+  .team_item{
+    margin-bottom: 40px;
+    max-width: 400px;
+    &:nth-last-child(1){
+      margin-bottom: unset;
+    }
+  }
+  .projects_subtitle{
+    font-size: 28px;
+  }
+  .projects_img{
+    width: 200px;
+  }
+  .projects_company{
+    min-width: 224px;
+  }
+  .projects_companies{
+    margin: 150px 0 0 0;
+  }
+  #myearth{
+    height: 380px;
+  }
+  .network_popup{
+    right: 0px;
+    top: 100px;
+  }
+  .network{
+    height: 500px;
+  }
+  .footer{
+    padding: 60px 0;
+  }
+  .footer_subtitle{
+    font-size: 16px;
+  }
+}
 
-@media (max-width: 576px) {}
+@media (max-width: 576px) {
+  .promo_title, .vision_title, .factors_title, .team_title, .projects_title, .network_title, .footer_title{
+    font-size: 32px;
+  }
+  .promo_desc{
+    font-size: 16px;
+    padding: 0 27px;
+  }
+  .promo_desc_marked{
+    font-size: 24px;
+  }
+  .promo_subtitle{
+    margin-top: 50px;
+  }
+  .promo_subdesc{
+    padding: unset;
+  }
+  .vision_formula_item{
+    font-size: 26px;
+    width: 350px;
+    height: 180px;
+    padding: 39px 34px;
+  }
+  .unique_line{
+    font-size: 26px;
+    line-height: 50px;
+  }
+  .vision_desc{
+    margin: 60px 0px 0px 0px;
+  }
+  .factors_item_title{
+    font-size: 26px;
+  }
+  .factors_item_desc{
+    font-size: 15px;
+  }
+  .factors_item_img{
+    height: 90px;
+  }
+  .projects_company{
+    min-width: 150px;
+  }
+  .projects_img{
+    width: 150px;
+  }
+  .projects_companies{
+    margin: 120px 0 0 0;
+  }
+  .projects_block{
+    height: 190px;
+  }
+  .projects_divider{
+    width: 100px;
+  }
+  .projects_img{
+    width: 100px;
+  }
+  .projects_company_v2{
+    height: 70px;
+  }
+  .projects_subtitle{
+    font-size: 24px;
+  }
+  #myearth{
+    height: 300px;
+    width: 300px;
+  }
+  .network_popup_title{
+    font-size: 16px;
+  }
+  .network_popup_desc{
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .network_popup_phone{
+    font-size: 12px;
+    margin-top: 20px;
+  }
+  .footer_divider{
+    margin: 40px auto;
+  }
+}
+
+@media (max-width: 425px){
+  .side_menu_item{
+    font-size: 20px;
+  }
+  .promo_title, .vision_title, .factors_title, .team_title, .projects_title, .network_title, .footer_title{
+    font-size: 24px;
+  }
+  .promo_divider{
+    width: 265px;
+  }
+  .promo_desc{
+    padding: unset;
+    font-size: 12px;
+  }
+  .promo_desc_marked{
+    font-size: 16px;
+  }
+  .promo_subtitle{
+    margin-top: 30px;
+    font-size: 18px;
+  }
+  .promo_subdesc{
+    font-size: 12px;
+  }
+  .vision{
+    padding-top: 50px;
+  }
+  .vision_formula_item{
+    font-size: 22px;
+    width: 320px;
+    height: 170px;
+    padding: 35px 30px;
+  }
+  .unique_line{
+    font-size: 22px;
+  }
+  .vision_desc{
+    font-size: 16px;
+  }
+  .factors_content{
+    padding: 50px 0;
+  }
+  .factors_item_title{
+    font-size: 16px;
+  }
+  .factors_item_desc{
+    font-size: 12px;
+  }
+  .factors_item{
+    width: 250px;
+  }
+  .factors_item_img{
+    height: 60px;
+    margin-bottom: 30px;
+  }
+  .team{
+    margin-top: 40px;
+  }
+  .team_item{
+    max-width: 350px;
+  }
+  .team_text_title{
+    font-size: 16px;
+  }
+  .team_text_desc{
+    font-size: 12px;
+  }
+  .team_item{
+    max-width: 320px;
+  }
+  .projects_img{
+    width: 110px;
+  }
+  .projects_company{
+    min-width: 124px;
+  }
+  .projects_companies{
+    margin: 110px 0 0 0;
+  }
+  .projects_wrapper{
+    margin: 50px 0 0 0;
+  }
+  .single_company{
+    &:before{
+      bottom: -90%;
+    }
+  }
+  .projects_subtitle{
+    font-size: 18px;
+    margin-top: 40px;
+  }
+  .projects{
+    padding: 50px 0 60px 0;
+    margin-top: 60px;
+  }
+  .no_line{
+    margin-top: 50px !important;
+  }
+  .network{
+    height: 400px;
+    margin-top: 60px;
+  }
+  #myearth{
+    width: 200px;
+    height: 200px;
+  }
+  .footer_title{
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 375px){
+  .side_menu_item{
+    font-size: 20px;
+  }
+  .promo_title, .vision_title, .factors_title, .team_title, .projects_title, .network_title, .footer_title{
+    font-size: 24px;
+  }
+  .promo_divider{
+    width: 210px;
+  }
+  .promo_desc{
+    padding: unset;
+    font-size: 12px;
+  }
+  .promo_desc_marked{
+    font-size: 16px;
+  }
+  .promo_subtitle{
+    margin-top: 30px;
+    font-size: 18px;
+  }
+  .promo_subdesc{
+    font-size: 12px;
+  }
+  .vision{
+    padding-top: 50px;
+  }
+  .vision_formula_item{
+    font-size: 22px;
+    width: 320px;
+    height: 170px;
+    padding: 35px 30px;
+  }
+  .unique_line{
+    font-size: 22px;
+  }
+  .vision_desc{
+    font-size: 16px;
+  }
+  .factors_content{
+    padding: 50px 0;
+  }
+  .factors_item_title{
+    font-size: 16px;
+  }
+  .factors_item_desc{
+    font-size: 12px;
+  }
+  .factors_item{
+    width: 200px;
+  }
+  .factors_item_img{
+    height: 60px;
+    margin-bottom: 30px;
+  }
+  .team{
+    margin-top: 40px;
+  }
+  .team_text_title{
+    font-size: 16px;
+  }
+  .team_text_desc{
+    font-size: 12px;
+  }
+  .projects_img{
+    width: 80px;
+  }
+  .projects_company{
+    min-width: 110px;
+  }
+  .projects_companies{
+    margin: 110px 0 0 0;
+  }
+  .single_company{
+    &:before{
+      bottom: -125%;
+    }
+  }
+  .projects_subtitle{
+    font-size: 18px;
+    margin-top: 40px;
+  }
+  .projects{
+    padding: 50px 0 60px 0;
+    margin-top: 60px;
+  }
+  .no_line{
+    margin-top: 50px !important;
+  }
+  .network{
+    height: 400px;
+    margin-top: 60px;
+  }
+  #myearth{
+    width: 150px;
+    height: 150px;
+  }
+  .network_popup_title{
+    line-height: 24px;
+  }
+  .network_popup_phone{
+    line-height: 20px;
+  }
+  .footer_title{
+    line-height: 30px;
+  }
+}
