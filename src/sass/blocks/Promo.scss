@@ -1,5 +1,5 @@
 .promo{
-  background: url("/img/promo_bg.png");
+  background: url("../img/promo_bg.png");
   height: 100vh;
   &_logo{
     position: absolute;
@@ -8,7 +8,7 @@
     transform: translateX(-50%) translateY(-50%);
   }
   &_arrow{
-    background: url("/img/arrow.svg");
+    background: url("../img/arrow.svg");
     height: 21px;
     width: 60px;
     position: absolute;
