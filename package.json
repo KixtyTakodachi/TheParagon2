@@ -1,0 +1,38 @@
+{
+  "name": "pulse",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start-webpack": "npx webpack",
+    "start-gulp": "gulp",
+    "start": "concurrently \"npm:start-webpack\" \"npm:start-gulp\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.15.0",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.15.0",
+    "babel-loader": "^8.2.2",
+    "browser-sync": "^2.27.5",
+    "concurrently": "^6.2.1",
+    "core-js": "^3.16.3",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-cli": "^2.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^6.2.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.1.1",
+    "json-server": "^0.16.3",
+    "webpack": "^5.51.1",
+    "webpack-cli": "^4.8.0"
+  },
+  "browserslist": [
+    "> 1%"
+  ],
+  "description": "",
+  "dependencies": {}
+}

@@ -1,0 +1,62 @@
+// @import 'bootstrap4/bootstrap-grid';
+@import 'slick';
+@import 'animate';
+@import "mixin/flex";
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	box-sizing: border-box;
+}
+
+
+
+@function px2rem($u) {
+	@return (1rem * $u / 19.2);
+	// @if (unitless($u) or unit($u) == 'px') {
+	// 	@return 1rem * (to-number($u)/16);
+	// } @else {
+	// 	@return $u;
+	// }
+}
+
+@mixin transition-all($time: .5s) {
+	//миксин для транзишинов. использовать как @include transition-all(.5s);
+	-webkit-transition: all $time ease-in-out;
+	-moz-transition: all $time ease-in-out;
+	-o-transition: all $time ease-in-out;
+	transition: all $time ease-in-out;
+}
+
+
+
+
+// @include f;    //Это вешает display: flexbox;
+// @include ai(center);    //Это вешает align-items: center;   в место center могут быть все варианты align-items
+// @include jcsb;    //Это вешает justify-content(space-between);
+// @include jc(space-between);    //Это вешает justify-content(space-between);
+// @include fw(wrap);    //Это вешает flex-wrap: wrap;
+
+
+// html {
+// 	font-size: 0.8vw;
+// }
+body {}
+
+.clear {
+	clear: both;
+}
+
+.hidden {
+	display: none;
+}
+
+
+// @import "compass/css3";
+
+
+$light: #f0f0f0;
+$dark: #111;
+
+body {}
