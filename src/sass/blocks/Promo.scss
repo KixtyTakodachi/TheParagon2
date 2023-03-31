@@ -1,0 +1,20 @@
+.promo{
+  background: url("/img/promo_bg.png");
+  height: 100vh;
+  &_logo{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  &_arrow{
+    background: url("/img/arrow.svg");
+    height: 21px;
+    width: 60px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 105px;
+    cursor: pointer;
+  }
+}

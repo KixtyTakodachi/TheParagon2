@@ -3,15 +3,32 @@
 @import 'base/variables';
 @import 'base/mixins';
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Volkhov:wght@400;700&display=swap');
+
 * {
-    /* font-family: ???; */
+    font-family: Montserrat;
     margin: 0;
     padding: 0;
     font-size: 1vw;
 }
 
 .container {
-    /* width: px2rem(???); */
+    width: px2rem(1680);
     margin: 0 auto;
     position: relative;
 }
+
+.divider{
+    border-top: 1px dashed $main_color;
+    margin: 12px 0px;
+}
+
+@import "./blocks/Header.scss";
+@import "./blocks/Promo.scss";
+@import "./blocks/Vision.scss";
+@import "./blocks/Factors.scss";
+@import "./blocks/Team.scss";
+@import "./blocks/Projects.scss";
+@import "./blocks/Network.scss";
+@import "./blocks/Footer.scss";

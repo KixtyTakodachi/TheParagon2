@@ -1,0 +1,46 @@
+.team{
+  margin-top: 138px;
+  &_title{
+    color: $main_color;
+    font-size: 72px;
+    font-family: Volkhov;
+    font-weight: 400;
+    text-align: center;
+  }
+  &_wrapper{
+    display: flex;
+    margin: 77px 140px 0px 140px;
+    justify-content: space-between;
+  }
+  &_item{
+    background: linear-gradient(to right, $main_color 1px, transparent 1px) 0 0,
+    linear-gradient(to right, $main_color 1px, transparent 1px) 0 100%,
+    linear-gradient(to left, $main_color 1px, transparent 1px) 100% 0,
+    linear-gradient(to left, $main_color 1px, transparent 1px) 100% 100%,
+    linear-gradient(to bottom, $main_color 1px, transparent 1px) 0 0,
+    linear-gradient(to bottom, $main_color 1px, transparent 1px) 100% 0,
+    linear-gradient(to top, $main_color 1px, transparent 1px) 0 100%,
+    linear-gradient(to top, $main_color 1px, transparent 1px) 100% 100%;
+
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    padding: 30px;
+    display: flex;
+    max-width: 400px;
+  }
+  &_text{
+    margin-top: 12px;
+    margin-left: 22px;
+    &_title{
+      color: $main_color;
+      font-size: 24px;
+      font-weight: 400;
+      font-family: Volkhov;
+    }
+    &_desc{
+      font-size: 16px;
+      font-family: Montserrat;
+      font-weight: 400;
+    }
+  }
+}

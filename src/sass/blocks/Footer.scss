@@ -1,0 +1,27 @@
+.footer{
+//  margin-top: ???;
+  background: linear-gradient(180deg, rgba(5,57,126,1) 0%, rgba(7,25,71,1) 100%);
+  padding: 150px 0;
+  &_title{
+    color: $main_color;
+    text-align: center;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 93px;
+    font-family: Volkhov;
+  }
+  &_subtitle{
+    font-size: 22px;
+    font-weight: 300;
+    font-family: Montserrat;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    margin-top: 50px;
+  }
+  &_divider{
+    border-top: 1px dashed $main_color;
+    width: 302px;
+    margin: 55px auto;
+  }
+}
