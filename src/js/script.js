@@ -47,15 +47,63 @@ document.addEventListener("DOMContentLoaded", function() {
   })
 
   myearth.addEventListener("ready", function(){
-    const mypoints = myearth.addPoints( {
-      points: [
-        { location: {lat: 12.5, lng: 18.7}, scale: 2 },
-        { location: {lat: 19.3, lng: 10.2}, scale: 2 },
-        { location: {lat: 14.9, lng: 15.1}, scale: 2 }
-      ],
+    // const mypoints = this.addPoints( {
+    //   points: [
+    //     { location: {lat: 12.5, lng: 18.7}, scale: 2 },
+    //     { location: {lat: 19.3, lng: 10.2}, scale: 2 },
+    //     { location: {lat: 14.9, lng: 15.1}, scale: 2 }
+    //   ],
+    //   color: '#CDAE64',
+    //   opacity: 0.75,
+    //   hotspot : true
+    // } );
+    // mypoints.addEventListener( "click", function(e) {
+    //   debugger
+    //   logEvent( 'Earth', 'click' );
+    //   debugger
+    // } );
+
+    var mymarker = this.addMarker( {
+      // location: { lat : 22.5, lng : 20 },
+      // mesh: ["Pin2", "Needle"],
+      // color: "#00FF00",
+      location : { lat: 25.0657000, lng: 55.1712800 },
+      // mesh: ['Pin2', 'Needle'],
+      mesh : "Pin3",
       color: '#CDAE64',
-      opacity: 0.75
+      scale: 0.25,
+      hotspot : true
+    } );
+    mymarker.addEventListener( "click", function(e) {
+      debugger
+      console.log(e)
+      // logEvent( 'Earth', 'click' );
+      debugger
     } );
 
+    // var mymarker = this.addMarker( {
+    //   location : { lat: 45, lng: 0 },
+    //   mesh: ['Pin2', 'Needle'],
+    //   color: 'blue',
+    //   scale: 1.25,
+    //   hotspot : true
+    // } );
+    //
+    // mymarker.addEventListener( "click", function() {
+    //   debugger
+    //   logEvent( 'Marker', 'click' );
+    // } );
   })
+
+  // myearth.addEventListener( "click", function(e) {
+  //   debugger
+  //   logEvent( 'Earth', 'click' );
+  //   debugger
+  // } );
 })
+
+function logEvent( obj, type ) {
+  debugger
+  document.getElementById('eventlog').value += obj + ': ' + type + '\n';
+  document.getElementById('eventlog').scrollTop = document.getElementById('eventlog').scrollHeight;
+}

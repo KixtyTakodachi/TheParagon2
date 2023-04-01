@@ -322,6 +322,7 @@
   }
   .projects_wrapper{
     margin: 50px 0 0 0;
+    flex-direction: column;
   }
   .single_company{
     &:before{

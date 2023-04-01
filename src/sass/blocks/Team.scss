@@ -27,8 +27,12 @@
     padding: 30px;
     display: flex;
     max-width: 400px;
+    &:hover{
+      text-decoration: none;
+    }
   }
   &_text{
+    color: black;
     margin-top: 12px;
     margin-left: 22px;
     &_title{
