@@ -114,6 +114,14 @@
   .vision_formula_item{
     font-size: 32px;
   }
+  .vision_formula_images{
+    margin-top: 10px;
+    margin-bottom: 10px ;
+  }
+  .vision_formula_borders{
+    ///
+    margin-bottom: 10px;
+  }
   .unique_line{
     font-size: 32px;
   }
@@ -253,17 +261,17 @@
   }
   .promo_desc{
     padding: unset;
-    font-size: 12px;
+    font-size: 22px;
   }
   .promo_desc_marked{
-    font-size: 16px;
+    font-size: 30px;
   }
   .promo_subtitle{
     margin-top: 30px;
     font-size: 18px;
   }
   .promo_subdesc{
-    font-size: 12px;
+    font-size: 13px;
   }
   .vision{
     padding-top: 50px;
@@ -364,14 +372,15 @@
   }
   .promo_desc{
     padding: unset;
-    font-size: 12px;
+    width: auto;
+    font-size: 18px;
   }
   .promo_desc_marked{
-    font-size: 16px;
+    font-size: 19px;
   }
   .promo_subtitle{
     margin-top: 30px;
-    font-size: 18px;
+    font-size: 15px;
   }
   .promo_subdesc{
     font-size: 12px;
@@ -379,9 +388,13 @@
   .vision{
     padding-top: 50px;
   }
+  .vision_formula_borders {
+  width: 300px;
+  }
+
   .vision_formula_item{
     font-size: 22px;
-    width: 320px;
+    width: 260px;
     height: 170px;
     padding: 35px 30px;
   }
@@ -411,10 +424,13 @@
     margin-top: 40px;
   }
   .team_text_title{
-    font-size: 16px;
+    font-size: 12px;
   }
   .team_text_desc{
     font-size: 12px;
+  }
+  .team_item{
+    max-width: 280px;
   }
   .projects_img{
     width: 80px;
@@ -459,3 +475,4 @@
     line-height: 30px;
   }
 }
+

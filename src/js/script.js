@@ -1,5 +1,23 @@
-
+document.querySelector('.team_item_extended').style.display='none'
 document.addEventListener("DOMContentLoaded", function() {
+// получаем список всех элементов с классом team_item
+  const teamItems = document.querySelectorAll('.team_item');
+  const closeButton = document.querySelector('.close_button');
+  closeButton.addEventListener('click', () => {
+    const teamWrapper = document.querySelector('.team_wrapper');
+    const teamItemExtra = document.querySelector('.team_item_extended');
+    teamWrapper.style.display = 'flex';
+    teamItemExtra.style.display = 'none';
+  });
+// для каждого элемента списка команд добавляем обработчик события click
+  teamItems.forEach(teamItem => {
+    teamItem.addEventListener('click', () => {
+      const teamWrapper = document.querySelector('.team_wrapper');
+      const teamItemExtra = document.querySelector('.team_item_extended');
+      teamWrapper.style.display = 'none';
+      teamItemExtra.style.display = 'flex';
+    });
+  });
 
   //FIXME promo slider
   const slider_items = document.querySelectorAll('.promo_slider_item')
