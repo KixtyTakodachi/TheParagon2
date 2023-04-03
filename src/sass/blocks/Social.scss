@@ -1,0 +1,78 @@
+.social{
+  &_borders{
+    border: 1px solid $main_color;
+    padding: 40px;
+  }
+  &_content{
+    background: linear-gradient(180deg, rgba(5,57,126,1) 0%, rgba(7,25,71,1) 100%);
+     padding: 110px 120px 100px 80px;
+    &_wrapper{
+      display: flex;
+      margin-top: 36px;
+    }
+  }
+  &_title{
+    font-size: 72px;
+    font-family: Volkhov;
+    font-weight: 400;
+    line-height: 93px;
+    color: $main_color;
+    text-align: center;
+    margin-bottom: unset;
+  }
+  &_img{
+    &_borders{
+      background: linear-gradient(to right, $main_color 1px, transparent 1px) 0 0,
+      linear-gradient(to right, $main_color 1px, transparent 1px) 0 100%,
+      linear-gradient(to left, $main_color 1px, transparent 1px) 100% 0,
+      linear-gradient(to left, $main_color 1px, transparent 1px) 100% 100%,
+      linear-gradient(to bottom, $main_color 1px, transparent 1px) 0 0,
+      linear-gradient(to bottom, $main_color 1px, transparent 1px) 100% 0,
+      linear-gradient(to top, $main_color 1px, transparent 1px) 0 100%,
+      linear-gradient(to top, $main_color 1px, transparent 1px) 100% 100%;
+
+      background-repeat: no-repeat;
+      background-size: 50px 50px;
+      padding: 40px;
+    }
+  }
+  &_desc{
+    padding: 40px 0px 40px 40px;
+    &_title{
+      color: $main_color;
+      font-size: 22px;
+      font-weight: 400;
+      font-family: Volkhov;
+      margin-bottom: unset;
+    }
+    &_text{
+      color: white;
+      font-size: 18px;
+      font-weight: 300;
+      font-family: Montserrat;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: calc(100% - 66px);
+      &_with_dot{
+        color: white;
+        font-size: 18px;
+        font-weight: 300;
+        font-family: Montserrat;
+        position: relative;
+        margin-left: 20px;
+        &:before{
+          content: '';
+          width: 3px;
+          height: 3px;
+          background: white;
+          border-radius: 100%;
+          position: absolute;
+          left: -16px;
+          top: 20%;
+        }
+      }
+    }
+  }
+}

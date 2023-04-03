@@ -1,24 +1,25 @@
 
 document.addEventListener("DOMContentLoaded", function() {
+  //FIXME Maybe unnecessary?
 // получаем список всех элементов с классом team_item
-  const teamItems = document.querySelectorAll('.team_item');
-  const closeButton = document.querySelector('.close_button');
-  closeButton.addEventListener('click', () => {
-    const teamWrapper = document.querySelector('.team_wrapper');
-    const teamItemExtra = document.querySelector('.team_item_extended');
-    teamWrapper.classList.remove('hidden');
-    teamItemExtra.classList.remove('visible');
-  });
-// для каждого элемента списка команд добавляем обработчик события click
-  teamItems.forEach(teamItem => {
-    teamItem.addEventListener('click', () => {
-      const teamWrapper = document.querySelector('.team_wrapper');
-      const teamItemExtra = document.querySelector('.team_item_extended');
-      teamWrapper.classList.add('hidden');
-      teamItemExtra.classList.add('visible');
-
-    });
-  });
+//   const teamItems = document.querySelectorAll('.team_item');
+//   const closeButton = document.querySelector('.close_button');
+//   closeButton.addEventListener('click', () => {
+//     const teamWrapper = document.querySelector('.team_wrapper');
+//     const teamItemExtra = document.querySelector('.team_item_extended');
+//     teamWrapper.classList.toggle('team_active');
+//     teamItemExtra.classList.toggle('team_active');
+//   });
+// // для каждого элемента списка команд добавляем обработчик события click
+//   teamItems.forEach(teamItem => {
+//     teamItem.addEventListener('click', (e) => {
+//       const teamWrapper = document.querySelector('.team_wrapper');
+//       const teamItemExtra = document.querySelector('.team_item_extended');
+//       teamWrapper.classList.toggle('team_active');
+//       teamItemExtra.classList.toggle('team_active');
+//
+//     });
+//   });
 
   //FIXME promo slider
   const slider_items = document.querySelectorAll('.promo_slider_item')

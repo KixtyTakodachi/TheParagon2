@@ -43,6 +43,12 @@
   .network_popup_phone{
     margin-top: 30px;
   }
+  .social_content_wrapper{
+    flex-direction: column;
+  }
+  .social_img_borders{
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 992px) {
@@ -91,8 +97,15 @@
   .network_popup_phone{
     font-size: 14px;
   }
-  .promo_title, .vision_title, .factors_title, .team_title, .projects_title, .network_title, .footer_title{
+  .social_title, .promo_title, .vision_title, .factors_title, .team_title, .projects_title, .network_title, .footer_title{
     font-size: 62px;
+  }
+  .social_content{
+    padding: 110px 80px;
+  }
+  .social_desc{
+    padding: unset;
+    margin-top: 40px;
   }
 }
 
@@ -105,7 +118,7 @@
     flex-direction: column;
     justify-content: space-between;
   }
-  .promo_title, .vision_title, .factors_title, .team_title, .projects_title, .network_title, .footer_title{
+  .social_title, .promo_title, .vision_title, .factors_title, .team_title, .projects_title, .network_title, .footer_title{
     font-size: 42px;
   }
   .vision_desc{
@@ -164,10 +177,13 @@
   .footer_subtitle{
     font-size: 16px;
   }
+  .social_content{
+    padding: 110px 50px;
+  }
 }
 
 @media (max-width: 576px) {
-  .promo_title, .vision_title, .factors_title, .team_title, .projects_title, .network_title, .footer_title{
+  .social_title, .promo_title, .vision_title, .factors_title, .team_title, .projects_title, .network_title, .footer_title{
     font-size: 32px;
   }
   .promo_desc{
@@ -247,13 +263,16 @@
   .footer_divider{
     margin: 40px auto;
   }
+  .social_img{
+    width: 240px;
+  }
 }
 
 @media (max-width: 425px){
   .side_menu_item{
     font-size: 20px;
   }
-  .promo_title, .vision_title, .factors_title, .team_title, .projects_title, .network_title, .footer_title{
+  .social_title, .promo_title, .vision_title, .factors_title, .team_title, .projects_title, .network_title, .footer_title{
     font-size: 24px;
   }
   .promo_divider{
@@ -359,13 +378,40 @@
   .footer_title{
     line-height: 30px;
   }
+  .social_img_borders{
+    padding: 15px;
+  }
+  .social_img{
+    width: 160px;
+  }
+  .social_title{
+    line-height: 40px;
+  }
+  .social_desc_title{
+    font-size: 16px;
+  }
+  .social_desc_text{
+    font-size: 12px;
+  }
+  .social_desc_text_with_dot{
+    font-size: 12px;
+  }
+  .social_content{
+    padding: 110px 20px;
+  }
+  .social_content{
+    padding: 50px 10px;
+  }
+  .footer{
+    margin-top: 40px;
+  }
 }
 
 @media (max-width: 375px){
   .side_menu_item{
     font-size: 20px;
   }
-  .promo_title, .vision_title, .factors_title, .team_title, .projects_title, .network_title, .footer_title{
+  .social_title, .promo_title, .vision_title, .factors_title, .team_title, .projects_title, .network_title, .footer_title{
     font-size: 24px;
   }
   .promo_divider{
