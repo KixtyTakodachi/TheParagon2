@@ -21,7 +21,6 @@
     linear-gradient(to bottom, $main_color 1px, transparent 1px) 100% 0,
     linear-gradient(to top, $main_color 1px, transparent 1px) 0 100%,
     linear-gradient(to top, $main_color 1px, transparent 1px) 100% 100%;
-
     background-repeat: no-repeat;
     background-size: 50px 50px;
     padding: 30px;
@@ -29,7 +28,9 @@
     max-width: 400px;
   }
 
+
   &_item_extended{
+    display: none;
     background: linear-gradient(to right, $main_color 1px, transparent 1px) 0 0,
     linear-gradient(to right, $main_color 1px, transparent 1px) 0 100%,
     linear-gradient(to left, $main_color 1px, transparent 1px) 100% 0,
@@ -38,36 +39,81 @@
     linear-gradient(to bottom, $main_color 1px, transparent 1px) 100% 0,
     linear-gradient(to top, $main_color 1px, transparent 1px) 0 100%,
     linear-gradient(to top, $main_color 1px, transparent 1px) 100% 100%;
-
     background-repeat: no-repeat;
     background-size: 50px 50px;
     padding: 30px;
-    display: flex;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 100px;
-    max-width: 1000px;
+    margin-top: 77px;
+    max-width: 1400px;
+    position: relative;
   }
+  .team_item_extended::after{
+    content: '';
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 420px;
+    border-left: 1px dashed $main_color;
+  }
+
+  .team_wrapper {
+    display: flex;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .team_wrapper.hidden {
+    opacity: 0;
+    position: absolute;
+    transition: opacity 1s ease;
+  }
+
+  .team_item_extended {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .team_item_extended.visible {
+    display: flex;
+    opacity: 1;
+  }
+ .close_button{
+   cursor: pointer;
+   font-size: 20px;
+   color: $main_color;
+ }
   .team_text_extended{
     color: black;
-    margin-left: 60px;
-    margin-right: 30px;
+    margin-left: 110px;
+    margin-right: 80px;
     margin-top: 30px;
+    font-size: 16px;
+    font-family: Montserrat;
+
   }
+
+
 
   &_text{
     margin-top: 12px;
     margin-left: 22px;
+
     &_title{
       color: $main_color;
       font-size: 24px;
       font-weight: 400;
       font-family: Volkhov;
+
     }
+
     &_desc{
       font-size: 16px;
       font-family: Montserrat;
       font-weight: 400;
     }
+
   }
+
 }

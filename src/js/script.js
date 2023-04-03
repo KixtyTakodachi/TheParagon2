@@ -1,4 +1,4 @@
-document.querySelector('.team_item_extended').style.display='none'
+
 document.addEventListener("DOMContentLoaded", function() {
 // получаем список всех элементов с классом team_item
   const teamItems = document.querySelectorAll('.team_item');
@@ -6,16 +6,17 @@ document.addEventListener("DOMContentLoaded", function() {
   closeButton.addEventListener('click', () => {
     const teamWrapper = document.querySelector('.team_wrapper');
     const teamItemExtra = document.querySelector('.team_item_extended');
-    teamWrapper.style.display = 'flex';
-    teamItemExtra.style.display = 'none';
+    teamWrapper.classList.remove('hidden');
+    teamItemExtra.classList.remove('visible');
   });
 // для каждого элемента списка команд добавляем обработчик события click
   teamItems.forEach(teamItem => {
     teamItem.addEventListener('click', () => {
       const teamWrapper = document.querySelector('.team_wrapper');
       const teamItemExtra = document.querySelector('.team_item_extended');
-      teamWrapper.style.display = 'none';
-      teamItemExtra.style.display = 'flex';
+      teamWrapper.classList.add('hidden');
+      teamItemExtra.classList.add('visible');
+
     });
   });
 
