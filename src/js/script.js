@@ -1,4 +1,55 @@
-
+const coords = [
+  {
+    name: 'San Jose',
+    lat: 37.335480,
+    lng: -121.893028,
+  },
+  {
+    name: 'Houston',
+    lat: 29.749907,
+    lng: -95.358421,
+  },
+  {
+    name: 'Belgrade',
+    lat: 44.787197,
+    lng: 20.457273,
+  },
+  {
+    name: 'Cairo',
+    lat: 30.033333,
+    lng: 31.233334,
+  },
+  {
+    name: 'Dubai',
+    lat: 25.276987,
+    lng: 55.296249,
+  },
+  {
+    name: 'Astana',
+    lat: 51.169392,
+    lng: 71.449074,
+  },
+  {
+    name: 'Singapore',
+    lat: 1.290270,
+    lng: 103.851959,
+  },
+  {
+    name: 'Jakarta',
+    lat: -6.200000,
+    lng: 106.816666,
+  },
+  {
+    name: 'Ho Chi Minh City',
+    lat: 10.762622,
+    lng: 106.660172,
+  },
+  {
+    name: 'Manila',
+    lat: 14.599512,
+    lng: 120.984222,
+  },
+]
 document.addEventListener("DOMContentLoaded", function() {
   //FIXME Maybe unnecessary?
 // получаем список всех элементов с классом team_item
@@ -83,23 +134,40 @@ document.addEventListener("DOMContentLoaded", function() {
     //   debugger
     // } );
 
-    var mymarker = this.addMarker( {
-      // location: { lat : 22.5, lng : 20 },
-      // mesh: ["Pin2", "Needle"],
-      // color: "#00FF00",
-      location : { lat: 25.0657000, lng: 55.1712800 },
-      // mesh: ['Pin2', 'Needle'],
-      mesh : "Pin3",
-      color: '#CDAE64',
-      scale: 0.25,
-      hotspot : true
-    } );
-    mymarker.addEventListener( "click", function(e) {
-      debugger
-      console.log(e)
-      // logEvent( 'Earth', 'click' );
-      debugger
-    } );
+    const markers = coords.map(item => {
+      return this.addMarker({
+        location: { lat: item.lat, lng: item.lng },
+        mesh: 'Pin3',
+        color: '#CDAE64',
+        scale: 0.25,
+        hotspot : true,
+        test: item.name
+      })
+    })
+    markers.forEach(item => {
+      item.addEventListener('click', function(e){
+        debugger
+        console.log(e)
+        debugger
+      })
+    })
+    // var mymarker = this.addMarker( {
+    //   // location: { lat : 22.5, lng : 20 },
+    //   // mesh: ["Pin2", "Needle"],
+    //   // color: "#00FF00",
+    //   location : { lat: 25.0657000, lng: 55.1712800 },
+    //   // mesh: ['Pin2', 'Needle'],
+    //   mesh : "Pin3",
+    //   color: '#CDAE64',
+    //   scale: 0.25,
+    //   hotspot : true
+    // } );
+    // mymarker.addEventListener( "click", function(e) {
+    //   debugger
+    //   console.log(e)
+    //   // logEvent( 'Earth', 'click' );
+    //   debugger
+    // } );
 
     // var mymarker = this.addMarker( {
     //   location : { lat: 45, lng: 0 },

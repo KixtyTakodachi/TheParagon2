@@ -40,6 +40,27 @@
       font-family: Montserrat;
       line-height: 30px;
       font-weight: 400;
+      list-style: none;
+      margin-left: 10px;
+    }
+    &_item{
+      font-size: 18px;
+      color: black;
+      font-family: Montserrat;
+      line-height: 30px;
+      font-weight: 400;
+      position: relative;
+      &:before{
+        content: '';
+        border-radius: 100%;
+        background: $main_color;
+        width: 5px;
+        height: 5px;
+        position: absolute;
+        left: -15px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
     }
     &_phone{
       font-size: 18px;
