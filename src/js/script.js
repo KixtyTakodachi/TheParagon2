@@ -1,31 +1,31 @@
 const coords = [
   {
-    name: 'San Jose',
+    name: 'San Jose, USA',
     lat: 37.335480,
     lng: -121.893028,
   },
   {
-    name: 'Houston',
+    name: 'Houston, USA',
     lat: 29.749907,
     lng: -95.358421,
   },
   {
-    name: 'Belgrade',
+    name: 'Belgrade, Serbia',
     lat: 44.787197,
     lng: 20.457273,
   },
   {
-    name: 'Cairo',
+    name: 'Cairo, Egypt',
     lat: 30.033333,
     lng: 31.233334,
   },
   {
-    name: 'Dubai',
+    name: 'Dubai, UAE',
     lat: 25.276987,
     lng: 55.296249,
   },
   {
-    name: 'Astana',
+    name: 'Astana, Kazakhstan',
     lat: 51.169392,
     lng: 71.449074,
   },
@@ -35,17 +35,17 @@ const coords = [
     lng: 103.851959,
   },
   {
-    name: 'Jakarta',
+    name: 'Jakarta, Indonesia',
     lat: -6.200000,
     lng: 106.816666,
   },
   {
-    name: 'Ho Chi Minh City',
+    name: 'Ho Chi Minh City, Indonesia',
     lat: 10.762622,
     lng: 106.660172,
   },
   {
-    name: 'Manila',
+    name: 'Manila, Philippines',
     lat: 14.599512,
     lng: 120.984222,
   },
@@ -134,6 +134,7 @@ document.addEventListener("DOMContentLoaded", function() {
     //   debugger
     // } );
 
+    let popup = {}
     const markers = coords.map(item => {
       return this.addMarker({
         location: { lat: item.lat, lng: item.lng },
@@ -141,14 +142,26 @@ document.addEventListener("DOMContentLoaded", function() {
         color: '#CDAE64',
         scale: 0.25,
         hotspot : true,
-        test: item.name
+        name: item.name
       })
     })
     markers.forEach(item => {
       item.addEventListener('click', function(e){
-        debugger
-        console.log(e)
-        debugger
+        if(Object.keys(popup).length > 0){
+          popup.remove()
+        }
+        popup = myearth.addOverlay({
+          location: e.target.options.location,
+          content: `
+            <div>${item.name}</div>
+<!--            <div class="network_globe_popup_close">X</div>-->
+          `,
+          depthScale: 0.5,
+          className: 'network_globe_popup'
+        })
+        document.getElementsByClassName('network_globe_popup_close')[0].addEventListener('click', () => {
+          popup.remove()
+        })
       })
     })
     // var mymarker = this.addMarker( {

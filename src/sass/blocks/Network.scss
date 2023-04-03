@@ -88,3 +88,19 @@
     background: radial-gradient(ellipse at center, rgba(5,57,89,0.7) 0%,rgba(5,57,89,0.55) 20%,rgba(5,57,89,0.2) 40%,rgba(5,57,89,0.1) 50%,rgba(5,57,89,0.02) 60%,rgba(5,57,89,0) 70%,rgba(5,57,89,0) 100%);
   }
 }
+
+.network_globe_popup{
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.network_globe_popup_close{
+  position: absolute;
+  top: 0;
+  right: 5px;
+  font-size: 12px;
+  cursor: pointer;
+  z-index: 5000;
+}
