@@ -159,9 +159,9 @@ document.addEventListener("DOMContentLoaded", function() {
           depthScale: 0.5,
           className: 'network_globe_popup'
         })
-        document.getElementsByClassName('network_globe_popup_close')[0].addEventListener('click', () => {
-          popup.remove()
-        })
+        // document.getElementsByClassName('network_globe_popup_close')[0].addEventListener('click', () => {
+        //   popup.remove()
+        // })
       })
     })
     // var mymarker = this.addMarker( {
