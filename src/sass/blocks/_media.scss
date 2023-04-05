@@ -1,12 +1,22 @@
 @media (max-width: 1200px) {
   .header_menu{
-    width: 700px;
+    width: 550px;
+  }
+  .header_menu_link{
+    font-size: 12px;
   }
   .promo_slider_wrapper{
     margin: 0px 80px;
   }
+  .promo_desc{
+    padding: unset;
+    font-size: 32px;
+  }
+  .promo_subdesc{
+    padding: unset;
+  }
   .promo_desc_marked{
-    font-size: 52px;
+    font-size: 48px;
   }
   .vision_formula{
     flex-direction: column;
@@ -53,7 +63,7 @@
 
 @media (max-width: 992px) {
   .header_menu{
-    width: 600px;
+    width: 520px;
   }
   .promo_desc{
     font-size: 28px;
@@ -62,7 +72,10 @@
     font-size: 36px;
   }
   .promo_subdesc{
-    padding: 0 47px;
+    padding: unset;
+  }
+  .promo_subtitle{
+    margin-top: 30px;
   }
   .vision_desc{
     margin: 60px 190px 0 190px;
