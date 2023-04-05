@@ -1,7 +1,7 @@
 .footer{
-  margin-top: 160px;
+  height: 100vh;
   background: linear-gradient(180deg, rgba(5,57,126,1) 0%, rgba(7,25,71,1) 100%);
-  padding: 150px 0;
+  position: relative;
   &_title{
     color: $main_color;
     text-align: center;
@@ -23,5 +23,11 @@
     border-top: 1px dashed $main_color;
     width: 302px;
     margin: 55px auto;
+  }
+  &_content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 }
