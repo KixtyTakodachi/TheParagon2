@@ -3,7 +3,7 @@
   height: 100vh;
   padding-top: 100px;
   &_title{
-    font-size: 72px;
+    @include title;
     color: $main_color;
     font-family: Volkhov;
     font-weight: 400;
@@ -79,7 +79,7 @@
     }
   }
   &_img{
-    width: 130px;
+    //width: 130px;
   }
 }
 

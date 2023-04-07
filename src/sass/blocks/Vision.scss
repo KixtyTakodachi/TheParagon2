@@ -2,7 +2,7 @@
   padding-top: 150px;
   &_title{
     font-family: Volkhov;
-    font-size: 72px;
+    @include title;
     text-align: center;
     color: $main_color;
   }
@@ -26,14 +26,14 @@
       padding: 18px;
     }
     &_item{
-      width: 370px;
+      width: 20vw;
       height: 208px;
       background: $main_color;
       color: white;
-      font-size: 38px;
+      font-size: 2vw;
       text-align: center;
       font-family: Volkhov;
-      padding: 56px 34px;
+      padding: 56px 1.7vw;
       line-height: 50px;
     }
   }
@@ -50,7 +50,7 @@
 
 .unique_line{
   color: white;
-  font-size: 38px;
+  font-size: 2vw;
   text-align: center;
   font-family: Volkhov;
   position: relative;

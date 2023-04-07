@@ -2,7 +2,7 @@
   margin-top: 138px;
   &_title{
     color: $main_color;
-    font-size: 72px;
+    @include title;
     font-family: Volkhov;
     font-weight: 400;
     text-align: center;

@@ -3,8 +3,8 @@
   margin-top: 160px;
   padding: 150px 0px 160px 0px;
   &_title{
+    @include title;
     color: $main_color;
-    font-size: 72px;
     font-weight: 400;
     font-family: Volkhov;
     text-align: center;

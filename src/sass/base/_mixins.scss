@@ -5,3 +5,10 @@
   font-family: Volkhov;
   text-align: center;
 }
+
+@mixin title{
+  font-size: 3.750vw;
+  @media (max-width: 576px){
+    font-size: 32px;
+  }
+}
